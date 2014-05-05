@@ -1,5 +1,35 @@
 OurWedding::Application.routes.draw do
+  resources :households do
+    collection do
+      get :search
+    end
+  end
+  resources :guests do
+    get 'search', on: :collection
+  end
+
+
+
+
+  root 'households#search'
+  #match '/guests/search', to: 'guest#search', via: 'get'
+  match '/admin', to: 'households#new', via: 'get'
+  get "guests/new"
+  #get "households/new"
   get "static_pages/home"
+  match '/guests', to: 'guest#index', via: 'get'
+  match '/households/search', to: 'household#search', via: 'get'
+  match '/households', to: 'household#index', via: 'get'
+  #match '/guests/search', to: 'guest#search', via: 'get', on: :collection
+
+  get '/households/:id/edit', to: 'households#edit', as: 'rsvp'
+  get '/households/select', to: 'households#select'
+
+  get '/households', to: 'households#index'
+
+  get '/guests/:id/edit', to: 'guests#edit'
+
+  #match '/rsvp', to: 'households#edit', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

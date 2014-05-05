@@ -1,0 +1,24 @@
+<h1 class="TopLevelHeader">RSVP</h1>
+
+<p>
+  Thank you for your response.<br/>
+  If anything changes between now and the big day feel free to come back here to update.<br>
+  Or you can e-mail us at <a href="mailto:ashleyandsergio@gmail.com?Subject=RSVP" target="_top">ashleyandsergio@gmail.com</a>
+</p>
+<%# if @household.guests.uniq{|x| x.wedding}.count == 1 %>
+    <%#= @household.attending %>
+<%# else %>
+    <%# end %>
+
+
+    <%#= @household.addressline1 %> <%#= @household.addressline2 %>
+    <%#= @household.city %> <%#= @household.state %>
+    <%#= @household.zipcode %>
+
+  <%# @household.guests.each do |g| %>
+    <%# if g.is_plus_one == true %>
+
+    <%# else %>
+          <%#= g.firstname %> <%#= g.lastname %>
+
+    <%# end %>

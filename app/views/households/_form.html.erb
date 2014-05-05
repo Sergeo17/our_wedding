@@ -1,0 +1,20 @@
+<%=  form_for @household do |h| %>
+
+<p>
+    <%= h.text_field :addressline1, placeholder: 'Address Line 1' %><br/>
+    <%= h.text_field :addressline2, placeholder: 'Address Line 2' %><br/>
+    <%= h.text_field :city, placeholder: 'City' %><br/>
+    <%= h.text_field :state, placeholder: 'State' %><br/>
+    <%= h.text_field :zipcode, placeholder: 'Zip Code' %>
+</p>
+    <%= h.fields_for :guests do |builder| %>
+        <%= render :partial => 'guest_fields', :locals => { h: builder} %>
+    <% end %>
+    <p>
+      <%= link_to_add_fields "Add Guest", h, :guests %>
+    </p>
+
+
+    <%= h.submit "Create Household" %>
+<% end %>
+

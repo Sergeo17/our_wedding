@@ -1,0 +1,25 @@
+<h1 class="TopLevelHeader">RSVP</h1>
+<% if @households.count == 0 %>
+    <p>
+      Hmmm something weird happened, we couldn't find your entry in our database. <br/>
+      Sorry about that, probably just a bug in the application.<br/>
+      If you think you may have mistyped the household name or the ZIP code you can click <%= link_to "here", "/" %> to
+      try again.<br/>
+      Or you can RSVP by sending an email to
+      <a href="mailto:ashleyandsergio@gmail.com?Subject=RSVP" target="_top">ashleyandsergio@gmail.com</a>
+    </p>
+<% else %>
+    <% @households.each do |h| %>
+        <p class="SelectHousehold">
+          <%= link_to 'Select', edit_household_path(:id => h.id), :class=>"SelectButton" %>
+          <% h.guests.each_with_index do |g, index| %>
+              <% if g.is_plus_one == true %>
+                  and Guest.
+              <% else %>
+                  <%= 'and' if index > 0 %> <%= g.firstname %> <%= g.lastname %>
+              <% end %>
+          <% end %>
+          <br/>
+        </p>
+    <% end %>
+<% end %>

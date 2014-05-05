@@ -1,0 +1,11 @@
+<fieldset>
+  <p>
+  <%= h.text_field :firstname, placeholder: 'First Name'  %><br/>
+  <%= h.text_field :lastname, placeholder: 'Last Name'  %><br/>
+  <%= h.label :is_plus_one, "Is a plus one" %> <%= h.check_box :is_plus_one %><br/>
+  <%= h.hidden_field :_destroy %>
+  </p>
+  <p>
+    <%= link_to "Remove Guest", "#", class: "remove_fields" %>
+  </p>
+</fieldset>

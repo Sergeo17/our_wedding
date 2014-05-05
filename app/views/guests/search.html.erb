@@ -1,0 +1,8 @@
+<h1>Search</h1>
+<%= form_tag({controller: 'guests', action: 'search'}, method: 'get') do %>
+    <p>
+      <%= text_field_tag :lastname, params[:lastname] %>
+      <%= text_field_tag :zipcode, params[:zipcode] %>
+      <%= submit_tag "Submit", :name => nil %>
+    </p>
+<% end %>
