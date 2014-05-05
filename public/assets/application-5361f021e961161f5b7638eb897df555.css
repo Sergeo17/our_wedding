@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+
+@font-face {
+    font-family: 'AlwaysForever';
+    src: asset-url('alwaysforever-webfont.eot');
+    src: asset-url('alwaysforever-webfont.eot?#iefix') format('embedded-opentype'),
+    asset-url('alwaysforever-webfont.woff') format('woff'),
+    asset-url('alwaysforever-webfont.ttf') format('truetype'),
+    asset-url('alwaysforever-webfont.svg#always__foreverregular') format('svg');
+}
+
+@font-face {
+    font-family: 'TheWorldIsYours';
+    src: font-url('theworldisyours-webfont.eot');
+    src: font-url('theworldisyours-webfont.eot?#iefix') format('embedded-opentype'),
+    font-url('theworldisyours-webfont.woff') format('woff'),
+    font-url('theworldisyours-webfont.ttf') format('truetype'),
+    font-url('theworldisyours-webfont.svg#the_world_is_yoursregular') format('svg');
+}
+body {
+  /*background-color:rgba(219,239,178,0.1);*/
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: Tahoma;
+  color: #195e5e; }
+
+@font-face {
+  font-family: 'AlwaysForever';
+  src: url(/assets/alwaysforever-webfont.eot);
+  src: url(/assets/alwaysforever-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/alwaysforever-webfont.woff) format("woff"), url(/assets/alwaysforever-webfont.ttf) format("truetype"), url(/assets/alwaysforever-webfont.svg#always__foreverregular) format("svg"); }
+@font-face {
+  font-family: 'TheWorldIsYours';
+  src: url(/assets/theworldisyours-webfont.eot);
+  src: url(/assets/theworldisyours-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/theworldisyours-webfont.woff) format("woff"), url(/assets/theworldisyours-webfont.ttf) format("truetype"), url(/assets/theworldisyours-webfont.svg#the_world_is_yoursregular) format("svg"); }
+.TopLevelHeader {
+  font-family: 'TheWorldIsYours',Tahoma;
+  font-size: 2.5em; }
+
+a {
+  text-decoration: none;
+  color: #7d2155; }
+
+a:hover {
+  color: #c06799; }
+
+h1 {
+  margin-bottom: 5px; }
+
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.5em; }
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .9em;
+  color: #7d2155; }
+
+p {
+  margin-top: .4em;
+  margin-bottom: .4em;
+  font-size: .9em; }
+
+.submit {
+  margin-top: 5px; }
+
+input[type=submit] {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Tahoma;
+  width: 125px;
+  height: 2.5em;
+  text-align: center;
+  /*color:rgba(212,239,156,1);*/
+  color: #195e5e;
+  font-size: .9em;
+  background: rgba(240, 128, 128, 0.75);
+  /*padding: 10px 20px 10px 20px;*/
+  text-decoration: none;
+  border: none; }
+
+input[type=submit]:hover {
+  background: lightcoral;
+  /*color: rgba(189,224,119,1);*/
+  text-decoration: none; }
+
+input[type=text] {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgba(219, 239, 178, 0.4); }
+
+.SelectButton {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Tahoma;
+  width: 125px;
+  height: 2.5em;
+  text-align: center;
+  /*color:rgba(212,239,156,1);*/
+  color: #195e5e;
+  font-size: .9em;
+  background: rgba(240, 128, 128, 0.75);
+  padding: 3px 3px 3px 3px;
+  text-decoration: none;
+  border: none; }
+
+.SelectHousehold {
+  margin-bottom: .6em; }
+
+.LeaveComment {
+  margin-top: 2em; }
+
+.CommentArea {
+  width: 250px;
+  height: 75px;
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgba(219, 239, 178, 0.4); }
+
+.EmailInput {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgba(219, 239, 178, 0.4); }
+
+fieldset {
+  border: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+
+.admin {
+  padding: 15px 15px 15px 15px; }
