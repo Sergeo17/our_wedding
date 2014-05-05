@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39242235-ff92-495c-9e09-c7d7c8d7ae32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
     </list>
     <ignored path="our_wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="35" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.88819873" vertical-offset="635" max-vertical-offset="1470">
+            <state line="90" column="35" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.0" vertical-offset="635" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
@@ -95,7 +94,16 @@
       <file leaf-file-name="household.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="10" selection-start="2970" selection-end="2970" vertical-scroll-proportion="-33.4" vertical-offset="535" max-vertical-offset="2505">
+            <state line="11" column="0" selection-start="317" selection-end="1093" vertical-scroll-proportion="-3.3" vertical-offset="0" max-vertical-offset="2505">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="1" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.57763976" vertical-offset="0" max-vertical-offset="805">
               <folding />
             </state>
           </provider>
@@ -150,9 +158,10 @@
         <option value="$PROJECT_DIR$/app/views/households/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/_guest_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" />
         <option value="$PROJECT_DIR$/app/views/households/edit.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -325,6 +334,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -345,6 +358,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our_wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our_wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -959,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/households_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="50" selection-start="679" selection-end="679" vertical-scroll-proportion="0.33913043" vertical-offset="297" max-vertical-offset="1125">
@@ -1050,13 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="10" selection-start="2970" selection-end="2970" vertical-scroll-proportion="-33.4" vertical-offset="535" max-vertical-offset="2505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/households/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="28" selection-start="2834" selection-end="2834" vertical-scroll-proportion="-37.5" vertical-offset="0" max-vertical-offset="1140">
@@ -1066,7 +1083,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="35" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.88819873" vertical-offset="635" max-vertical-offset="1470">
+        <state line="90" column="35" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.0" vertical-offset="635" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="317" selection-end="1093" vertical-scroll-proportion="-3.3" vertical-offset="0" max-vertical-offset="2505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="1" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.57763976" vertical-offset="0" max-vertical-offset="805">
           <folding />
         </state>
       </provider>

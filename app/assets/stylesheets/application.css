@@ -11,3 +11,22 @@
  *= require_self
  *= require_tree .
  */
+
+
+@font-face {
+    font-family: 'AlwaysForever';
+    src: asset-url('alwaysforever-webfont.eot');
+    src: asset-url('alwaysforever-webfont.eot?#iefix') format('embedded-opentype'),
+    asset-url('alwaysforever-webfont.woff') format('woff'),
+    asset-url('alwaysforever-webfont.ttf') format('truetype'),
+    asset-url('alwaysforever-webfont.svg#always__foreverregular') format('svg');
+}
+
+@font-face {
+    font-family: 'TheWorldIsYours';
+    src: font-url('theworldisyours-webfont.eot');
+    src: font-url('theworldisyours-webfont.eot?#iefix') format('embedded-opentype'),
+    font-url('theworldisyours-webfont.woff') format('woff'),
+    font-url('theworldisyours-webfont.ttf') format('truetype'),
+    font-url('theworldisyours-webfont.svg#the_world_is_yoursregular') format('svg');
+}
