@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39242235-ff92-495c-9e09-c7d7c8d7ae32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/households/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/search.html.erb" afterPath="$PROJECT_DIR$/app/views/households/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/select.html.erb" afterPath="$PROJECT_DIR$/app/views/households/select.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/show.html.erb" afterPath="$PROJECT_DIR$/app/views/households/show.html.erb" />
     </list>
     <ignored path="our_wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,7 +94,7 @@
       <file leaf-file-name="household.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="45" selection-start="231" selection-end="231" vertical-scroll-proportion="-1.8675497" vertical-offset="1470" max-vertical-offset="2505">
+            <state line="100" column="39" selection-start="2232" selection-end="2232" vertical-scroll-proportion="0.24503312" vertical-offset="1315" max-vertical-offset="2505">
               <folding />
             </state>
           </provider>
@@ -1101,7 +1097,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="45" selection-start="231" selection-end="231" vertical-scroll-proportion="-1.8675497" vertical-offset="1470" max-vertical-offset="2505">
+        <state line="100" column="39" selection-start="2232" selection-end="2232" vertical-scroll-proportion="0.24503312" vertical-offset="1315" max-vertical-offset="2505">
           <folding />
         </state>
       </provider>
