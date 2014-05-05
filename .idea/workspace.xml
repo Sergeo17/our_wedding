@@ -94,7 +94,7 @@
       <file leaf-file-name="household.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="39" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.8807947" vertical-offset="1585" max-vertical-offset="2505">
+            <state line="100" column="39" selection-start="2232" selection-end="2232" vertical-scroll-proportion="0.4437086" vertical-offset="1165" max-vertical-offset="2505">
               <folding />
             </state>
           </provider>
@@ -1097,7 +1097,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/household.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="39" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.8807947" vertical-offset="1585" max-vertical-offset="2505">
+        <state line="100" column="39" selection-start="2232" selection-end="2232" vertical-scroll-proportion="0.4437086" vertical-offset="1165" max-vertical-offset="2505">
           <folding />
         </state>
       </provider>
