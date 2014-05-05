@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39242235-ff92-495c-9e09-c7d7c8d7ae32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/_guest_fields.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/guests/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/guests/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/guests/search.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/search.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/select.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/guests/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/households/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/our_wedding.iml" afterPath="$PROJECT_DIR$/.idea/our_wedding.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="our_wedding.iws" />
@@ -46,10 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/households/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="28" selection-start="2834" selection-end="2834" vertical-scroll-proportion="1.1523688" vertical-offset="0" max-vertical-offset="1140">
+            <state line="60" column="28" selection-start="2834" selection-end="2834" vertical-scroll-proportion="-37.5" vertical-offset="0" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="35" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.88819873" vertical-offset="635" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
@@ -152,7 +144,6 @@
         <option value="$PROJECT_DIR$/app/views/households/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/search.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/models/guest.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/household.js.coffee" />
@@ -161,6 +152,7 @@
         <option value="$PROJECT_DIR$/app/views/households/_guest_fields.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" />
         <option value="$PROJECT_DIR$/app/views/households/edit.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -1002,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="3" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.9627329" vertical-offset="545" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="3" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.8198758" vertical-offset="0" max-vertical-offset="805">
@@ -1074,7 +1059,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/households/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="28" selection-start="2834" selection-end="2834" vertical-scroll-proportion="1.1523688" vertical-offset="0" max-vertical-offset="1140">
+        <state line="60" column="28" selection-start="2834" selection-end="2834" vertical-scroll-proportion="-37.5" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="35" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.88819873" vertical-offset="635" max-vertical-offset="1470">
           <folding />
         </state>
       </provider>
