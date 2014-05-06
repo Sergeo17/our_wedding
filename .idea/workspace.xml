@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39242235-ff92-495c-9e09-c7d7c8d7ae32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__our_wedding.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__our_wedding.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__our_wedding.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__our_wedding.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/households/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/households/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/guest.rb" afterPath="$PROJECT_DIR$/app/models/guest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/household.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/household.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/household.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/household.rb" afterPath="$PROJECT_DIR$/app/models/household.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/households_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/households_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/new.html.erb" afterPath="$PROJECT_DIR$/app/views/households/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/search.html.erb" afterPath="$PROJECT_DIR$/app/views/households/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/show.html.erb" afterPath="$PROJECT_DIR$/app/views/households/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="39242235-ff92-495c-9e09-c7d7c8d7ae32" name="Default" comment="" />
     <ignored path="our_wedding.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
