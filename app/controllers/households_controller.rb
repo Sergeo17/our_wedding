@@ -1,6 +1,7 @@
 class HouseholdsController < ApplicationController
 
   def index
+    @households = Household.all
   end
 
   def show
@@ -15,7 +16,7 @@ class HouseholdsController < ApplicationController
   def create
     @household = Household.new(household_params)
     if @household.save
-      redirect_to @household
+      render 'admin_show'
     else
       render 'new'
     end
@@ -52,6 +53,10 @@ class HouseholdsController < ApplicationController
     end
   end
 
+  def admin_show
+    @household = Household.find(params[:id])
+  end
+
 
   private
 
@@ -61,7 +66,7 @@ class HouseholdsController < ApplicationController
                                       :guests_attributes => [:id, :firstname, :lastname, :household_id,
                                                              :welcome_party, :wedding, :breakfast,
                                                              :shuttle, :email, :vegetarian, :is_plus_one,
-                                                             :plus_one_declined, :rsvp_date, :_destroy],
+                                                             :plus_one_declined, :_destroy],
                                       :comments_attributes => [:comment, :household_id])
 
   end

@@ -162,7 +162,8 @@ fieldset{
 }
 
 #error_explanation {
-  color: #f00;
+  color: rgba(125,33,85,1);
+  font-size: .9em;
 }
 
 #error_explanation ul {
@@ -182,4 +183,8 @@ fieldset{
 
 label {
   font-size: .9em;
+}
+
+i {
+  font-size: .7em;
 }

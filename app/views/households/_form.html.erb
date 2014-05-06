@@ -1,5 +1,7 @@
 <%=  form_for @household do |h| %>
     <%= render "shared/error_messages" %>
+    <p><%= link_to "See All Households", households_path %></p>
+    <p><%= link_to "See Comments", comments_path %></p>
 <p>
     <%= h.text_field :addressline1, placeholder: 'Address Line 1' %><br/>
     <%= h.text_field :addressline2, placeholder: 'Address Line 2' %><br/>

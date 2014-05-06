@@ -1,0 +1,19 @@
+<h1 class="TopLevelHeader">Review</h1>
+
+<p>
+  <%= @household.addressline1 %> <%= @household.addressline2 %><br/>
+  <%= @household.city %> <%= @household.state %><br/>
+  <%= @household.zipcode %>
+</p>
+
+<p>
+  <% @household.guests.each do |g| %>
+      <% if g.is_plus_one == true %>
+          Plus One
+      <% else %>
+        <%= g.firstname %> <%= g.lastname %><br/>
+      <% end %>
+  <% end %>
+</p>
+<p><%= link_to "Add Another Household", new_household_path %></p>
+<p><%= link_to "See All Households", households_path %></p>

@@ -9,7 +9,6 @@ class Guest < ActiveRecord::Base
   validates_inclusion_of :wedding, :in => [true, false], :on => :update, unless: "plus_one_declined == true", :message => "Please let us know if can make it to our Wedding."
   validates_inclusion_of :breakfast, :in => [true, false], :on => :update, unless: "plus_one_declined == true", :message => "Please let us know if you will make it to Farewell Bagels."
 
-
   def self.search(search)
     where('lastname like ? OR firstname like ?' , "%#{search}%", "%#{search}%")
   end

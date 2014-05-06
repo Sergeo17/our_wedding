@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140506171641) do
+ActiveRecord::Schema.define(version: 20140506185046) do
 
   create_table "comments", force: true do |t|
     t.text     "comment"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20140506171641) do
     t.string   "addressline2"
     t.string   "city"
     t.string   "state"
-    t.integer  "zipcode"
+    t.string   "zipcode"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

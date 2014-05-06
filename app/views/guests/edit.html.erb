@@ -1,16 +1,8 @@
-<h1>guest edit</h1>
+<h1 class="TopLevelHeader">Edit Guest</h1>
 
 <%= form_for @guest do |g| %>
     <p>
-      <%= @guest.firstname %>
-      will attend:
-      <%= g.check_box :welcome_party %>
-      <%= g.label :welcome_party %>
-      <%= g.check_box :wedding %>
-      <%= g.label :wedding %>
-      <%= g.check_box :breakfast %>
-      <%= g.label :breakfast %>
-    </p>
-
+      <%= g.text_field :firstname %>
+      <%= g.text_field :lastname %>
     <%= g.submit "Update" %>
 <% end %>

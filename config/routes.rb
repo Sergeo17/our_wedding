@@ -13,7 +13,7 @@ OurWedding::Application.routes.draw do
 
   root 'households#search'
   #match '/guests/search', to: 'guest#search', via: 'get'
-  match '/admin', to: 'households#new', via: 'get'
+  match '/admin', to: 'static_pages#home', via: 'get'
   get "guests/new"
   #get "households/new"
   get "static_pages/home"
@@ -28,6 +28,7 @@ OurWedding::Application.routes.draw do
   get '/households', to: 'households#index'
 
   get '/guests/:id/edit', to: 'guests#edit'
+  get '/comments', to: 'comments#index'
 
   #match '/rsvp', to: 'households#edit', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.

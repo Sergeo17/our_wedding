@@ -31,9 +31,20 @@ class Household < ActiveRecord::Base
 
   end
 
-  def has_plus_one( household )
-    x=Household.joins(:guests).where('id = ? and is_plus_one = ?', "#{household}", true)
-    x.count
+  def has_plus_one()
+    has_plus_one = 0
+    self.guests.each do |g|
+      has_plus_one = has_plus_one + 1 if g.is_plus_one?
+    end
+    has_plus_one
+  end
+
+  def count_vegetarian()
+    count_vegetarian = 0
+    Guests.each do |g|
+      count_vegetarian = count_vegetarian + 1 if g.vegetarian == true
+    end
+    count_vegetarian
   end
 
 end
