@@ -160,3 +160,26 @@ fieldset{
 .admin{
   padding: 15px 15px 15px 15px;
 }
+
+#error_explanation {
+  color: #f00;
+}
+
+#error_explanation ul {
+  list-style: none;
+  margin: 0 0 18px 0;
+}
+
+.field_with_errors {
+  display: inline;
+  font-size: .9em;
+}
+
+.error_list {
+  padding: 0 0 0 0;
+  font-size: .9em;
+}
+
+label {
+  font-size: .9em;
+}

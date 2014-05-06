@@ -60,7 +60,8 @@ class HouseholdsController < ApplicationController
     params.require(:household).permit(:addressline1, :addressline2, :city, :state, :zipcode,
                                       :guests_attributes => [:id, :firstname, :lastname, :household_id,
                                                              :welcome_party, :wedding, :breakfast,
-                                                             :shuttle, :email, :vegetarian, :is_plus_one, :_destroy],
+                                                             :shuttle, :email, :vegetarian, :is_plus_one,
+                                                             :plus_one_declined, :rsvp_date, :_destroy],
                                       :comments_attributes => [:comment, :household_id])
 
   end

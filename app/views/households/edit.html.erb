@@ -1,69 +1,77 @@
 <%= form_for @household do |h| %>
+    <%= render "shared/error_messages" %>
     <%= h.fields_for :guests do |gg| %>
         <% if @household.guests[gg.index].is_plus_one == true && @household.guests[gg.index].firstname.empty? %>
             <h2>Guest</h2>
             <p>
               Please let us know your guest's name, if you plan on bringing one.<br/>
               <%= gg.text_field :firstname, placeholder: 'First Name' %>
-              <%= gg.text_field :lastname, placeholder: 'Last Name' %>
+              <%= gg.text_field :lastname, placeholder: 'Last Name' %><br/>
+              <%= gg.label("I don't plan to bring a guest") %> <%= gg.check_box(:plus_one_declined) %>
             </p>
         <% else %>
             <h2><%= @household.guests[gg.index].firstname %> <%= @household.guests[gg.index].lastname %></h2>
         <% end %>
-
-        <h3>Welcome Party</h3>
-        <p>
-          SeaCrest Hotel. Friday, July 25th 7-10pm.<br/>
-          <%= gg.radio_button(:welcome_party, true, :required => true ) %>
-          <%= gg.label(:welcome_party_attending, "Can't wait") %>
-          <%= gg.radio_button(:welcome_party, false, :required => true ) %>
-          <%= gg.label(:welcome_party_regrets, "Sorry to miss it") %>
-        </p>
-        <h3>Wedding Ceremony and Reception</h3>
-        <p>
-          Holland Ranch. Saturday, July 26th 4-10pm.<br/>
-          <%= gg.radio_button(:wedding, true, :required => true ) %>
-          <%= gg.label(:wedding_attending, "Can't wait") %>
-          <%= gg.radio_button(:wedding, false, :required => true ) %>
-          <%= gg.label(:wedding_regrets, "Sorry to miss it") %>
-        </p>
-        <div id="Wedding<%= gg.index %>" style="display:none;">
-          <p>
-            Do you plan on joining us on the shuttle between SeaCrest Hotel and Holland Ranch?<br/>
-            <%= gg.radio_button(:shuttle, true) %>
-            <%= gg.label(:shuttle_yes, "Shuttle sounds good to me!") %>
-            <%= gg.radio_button(:shuttle, false) %>
-            <%= gg.label(:shuttle_no, "I'll be planning my own transportation.") %>
-          </p>
+        <div id="RSVPFields<%= gg.index %>">
+          <h3>Welcome Party</h3>
 
           <p>
-            <%= gg.label("Would you like a vegetarian meal?") %> <%= gg.check_box(:vegetarian) %></td>
+            SeaCrest Hotel. Friday, July 25th 7-10pm.<br/>
+            <%= gg.radio_button(:welcome_party, true) %>
+            <%= gg.label(:welcome_party_attending, "Can't wait") %>
+            <%= gg.radio_button(:welcome_party, false) %>
+            <%= gg.label(:welcome_party_regrets, "Sorry to miss it") %>
           </p>
+
+          <h3>Wedding Ceremony and Reception</h3>
+
+          <p>
+            Holland Ranch. Saturday, July 26th 4-10pm.<br/>
+            <%= gg.radio_button(:wedding, true) %>
+            <%= gg.label(:wedding_attending, "Can't wait") %>
+            <%= gg.radio_button(:wedding, false) %>
+            <%= gg.label(:wedding_regrets, "Sorry to miss it") %>
+          </p>
+
+          <div id="Wedding<%= gg.index %>" style="display:none;">
+            <p>
+              Do you plan on joining us on the shuttle between SeaCrest Hotel and Holland Ranch?*<br/>
+              <%= gg.radio_button(:shuttle, true) %>
+              <%= gg.label(:shuttle_yes, "Shuttle sounds good to me!") %>
+              <%= gg.radio_button(:shuttle, false) %>
+              <%= gg.label(:shuttle_no, "I'll be planning my own transportation.") %>
+            </p>
+
+            <p>
+              <%= gg.label("Would you like a vegetarian meal?") %> <%= gg.check_box(:vegetarian) %>
+            </p>
+          </div>
+          <h3>Farewell Bagels</h3>
+
+          <p>
+            SeaCrest Hotel. Sunday, July 27th 9-11am.<br/>
+            <%= gg.radio_button(:breakfast, true) %>
+            <%= gg.label(:breakfast_attending, "Can't wait") %>
+            <%= gg.radio_button(:breakfast, false) %>
+            <%= gg.label(:breakfast_regrets, "Sorry to miss it") %>
+          </p>
+
+          <div id="Email<%= gg.index %>" style="display:none;">
+            <p>
+              <%= gg.label("Leave us your email if you’d like to receive updates as we get closer to the big day.") %>
+              <br/>
+              <%= gg.email_field(:email, size: 30, placeholder: 'Enter your e-mail', :class => "EmailInput") %>
+            </p>
+          </div>
         </div>
-        <h3>Farewell Bagels</h3>
-        <p>
-          SeaCrest Hotel. Sunday, July 27th 9-11am.<br/>
-          <%= gg.radio_button(:breakfast, true, :required => true ) %>
-          <%= gg.label(:breakfast_attending, "Can't wait") %>
-          <%= gg.radio_button(:breakfast, false, :required => true ) %>
-          <%= gg.label(:breakfast_regrets, "Sorry to miss it") %>
-        </p>
-        <div id="Email<%= gg.index %>" style="display:none;">
-          <p>
-            <%= gg.label("Leave us your email if you’d like to receive updates as we get closer to the big day.") %>
-            <br/>
-            <%= gg.email_field(:email, size: 30, placeholder: 'Enter your e-mail', :class=>"EmailInput") %>
-          </p>
-        </div>
-
     <% end %>
     <p class="LeaveComment">
       <%= h.fields_for :comments, @household.comments.build do |builder| %>
-          <%= builder.text_area :comment, :class=>"CommentArea", placeholder: 'Feel free to leave us a note.' %>
+          <%= builder.text_area :comment, :class => "CommentArea", placeholder: 'Feel free to leave us a note.' %>
       <% end %>
     </p>
     <p>
-      <%= h.submit "Submit", :class=>"RSVPSubmit" %>
+      <%= h.submit "Submit", :class => "RSVPSubmit" %>
     </p>
 <% end %>
 

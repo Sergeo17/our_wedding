@@ -14,7 +14,20 @@ jQuery ->
     $(this).before($(this).data('fields').replace(regexp, time))
     event.preventDefault()
 
+  $('#searchformsubmit').on 'click', (event) ->
+    lastname = document.getElementById("searchformlastname").value
+    zipcode = document.getElementById("searchformzipcode").value
+    if lastname is null or lastname is "" or zipcode is null or zipcode is ""
+      alert "The last name and ZIP code is required"
+      false
 
+  $(".householdsedit").ready ->
+    if Wedding0.prop("checked") is true
+      $('#Email0').show(200)
+      $('#Wedding0').show(200)
+    if Wedding1.prop("checked") is true
+      $('#Email1').show(200)
+      $('#Wedding1').show(200)
 
   Welcome0 = $('#household_guests_attributes_0_welcome_party_true')
   Welcome0regret = $('#household_guests_attributes_0_welcome_party_false')
@@ -29,6 +42,7 @@ jQuery ->
   Wedding1regret = $('#household_guests_attributes_1_wedding_false')
   Breakfast1 = $('#household_guests_attributes_1_breakfast_true')
   Breakfast1regret = $('#household_guests_attributes_1_breakfast_false')
+  DeclineGuest1 = $('#household_guests_attributes_1_plus_one_declined')
 
   RSVPSubmit = $('#RSVPSubmit')
   Shuttle0true = $('#household_guests_attributes_0_shuttle_true')
@@ -95,13 +109,13 @@ jQuery ->
     if Welcome1regret.prop("checked") is true and Wedding1regret.prop("checked") is true and Breakfast1regret.prop("checked") is true
       $('#Email1').hide(200)
 
+  DeclineGuest1.change ->
+    if DeclineGuest1.prop("checked") is true
+      $('#RSVPFields1').hide(200)
+    if DeclineGuest1.prop("checked") is false
+      $('#RSVPFields1').show(200)
 
-  RSVPSubmit.submit = ->
-    shuttle0true = shuttle0true.prop("checked")
-    shuttle0false = shuttle0false.prop("checked")
-    wedding = Wedding1.prop("checked")
-    if wedding is true and shuttle0false is false and shuttle0true is false
-      alert "Please let us know if you will be riding the shuttle. Thanks!"
-      false
+
+
 
 
