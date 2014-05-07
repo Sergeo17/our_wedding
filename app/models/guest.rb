@@ -9,8 +9,32 @@ class Guest < ActiveRecord::Base
   validates_inclusion_of :wedding, :in => [true, false], :on => :update, unless: "plus_one_declined == true", :message => "Please let us know if can make it to our Wedding."
   validates_inclusion_of :breakfast, :in => [true, false], :on => :update, unless: "plus_one_declined == true", :message => "Please let us know if you will make it to Farewell Bagels."
 
-  def self.search(search)
-    where('lastname like ? OR firstname like ?' , "%#{search}%", "%#{search}%")
+  def self.admin_search(search)
+    Household.joins(:guests).where('lower(lastname) like lower(?) or lower(firstname) like lower(?)', "%#{search}%", "%#{search}%" )
+  end
+
+  def has_plus_one()
+    has_plus_one = 0
+    self.guests.each do |g|
+      has_plus_one = has_plus_one + 1 if g.is_plus_one?
+    end
+    has_plus_one
+  end
+
+  def plus_one_count()
+    count_plus_ones = 0
+    Guests.each do |g|
+      count_plus_ones = count_plus_ones + 1 if g.is_plus_one == true
+    end
+    count_plus_ones
+  end
+
+  def count_vegetarian()
+    count_vegetarian = 0
+    Guests.each do |g|
+      count_vegetarian = count_vegetarian + 1 if g.vegetarian == true
+    end
+    count_vegetarian
   end
 
 end

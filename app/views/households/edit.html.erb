@@ -1,6 +1,7 @@
 <%= form_for @household do |h| %>
     <%= render "shared/error_messages" %>
     <%= h.fields_for :guests do |gg| %>
+        <%= gg.hidden_field :response_date, :value => DateTime.now %>
         <% if @household.guests[gg.index].is_plus_one == true && @household.guests[gg.index].firstname.empty? %>
             <h2>Guest</h2>
             <p>

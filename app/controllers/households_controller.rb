@@ -1,7 +1,8 @@
 class HouseholdsController < ApplicationController
 
   def index
-    @households = Household.all
+    @households = Household.admin_search(params[:search])
+    #@households = Household.all
   end
 
   def show
@@ -66,7 +67,7 @@ class HouseholdsController < ApplicationController
                                       :guests_attributes => [:id, :firstname, :lastname, :household_id,
                                                              :welcome_party, :wedding, :breakfast,
                                                              :shuttle, :email, :vegetarian, :is_plus_one,
-                                                             :plus_one_declined, :_destroy],
+                                                             :plus_one_declined, :response_date, :_destroy],
                                       :comments_attributes => [:comment, :household_id])
 
   end

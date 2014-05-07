@@ -115,7 +115,15 @@ jQuery ->
     if DeclineGuest1.prop("checked") is false
       $('#RSVPFields1').show(200)
 
+$("table tr").each ->
+  $(this).find("th").first().addClass "first"
+  $(this).find("th").last().addClass "last"
+  $(this).find("td").first().addClass "first"
+  $(this).find("td").last().addClass "last"
+  return
 
+$("table tr").first().addClass "row-first"
+$("table tr").last().addClass "row-last"
 
 
 

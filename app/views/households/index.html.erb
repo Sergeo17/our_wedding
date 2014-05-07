@@ -5,11 +5,13 @@
 <p><%= link_to "Add Another Household", new_household_path %></p>
 <p><%= link_to "See Comments", comments_path %></p>
 
-<p>
-  Guests Invited (including plus ones): <%= Guest.count %><br/>
-  Households: <%= Household.count %><br/>
-
-</p>
+  <%= form_tag households_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search], :placeholder => "Search by Name", :id =>"AdminSearchField" %><br/>
+        <%= submit_tag "Search", :name => nil, :id => "AdminSearchSubmit" %><br/>
+        <%= link_to "Clear Results", households_path %>
+      </p>
+  <% end %>
 <table>
   <tr>
     <th>First Name</th>
@@ -49,10 +51,8 @@
             <td><%= g.welcome_party %></td>
             <td><%= g.breakfast %></td>
             <td>
-              <% if g.created_at == g.updated_at %>
-                  No
-              <% else %>
-                  <%= g.updated_at.to_date.to_s %>
+              <% if g.response_date? %>
+                <%= g.response_date.to_date %>
               <% end %>
             </td>
             <td><%= link_to "Edit", edit_guest_path(g) %></td>

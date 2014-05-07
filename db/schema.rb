@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140506185046) do
+ActiveRecord::Schema.define(version: 20140506230516) do
 
   create_table "comments", force: true do |t|
     t.text     "comment"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140506185046) do
     t.string   "email"
     t.boolean  "vegetarian"
     t.boolean  "plus_one_declined"
+    t.datetime "response_date"
   end
 
   create_table "households", force: true do |t|

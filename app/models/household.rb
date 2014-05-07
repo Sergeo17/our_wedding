@@ -8,8 +8,17 @@ class Household < ActiveRecord::Base
 
 
   def self.search(search, zipcode)
-    Household.joins(:guests).where('lower(lastname) = lower(?) AND zipcode = ? AND is_plus_one = ?' , "#{search}", "#{zipcode}", false)
+    Household.joins(:guests).where('lower(lastname) = lower(?) AND lower(zipcode) = lower(?) AND is_plus_one = ?' , "#{search}", "#{zipcode}", false)
   end
+
+  def self.admin_search(search)
+    if search
+      Household.joins(:guests).where('lower(lastname) like lower(?) or lower(firstname) like lower(?)', "%#{search}%", "%#{search}%" )
+    else
+      all
+    end
+  end
+
 
   def count()
     #x=Household.joins(:guests).where('id = ? AND is_plus_one = ? AND wedding = ?', "#{household}", false, true)

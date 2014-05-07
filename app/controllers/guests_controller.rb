@@ -7,7 +7,7 @@ class GuestsController < ApplicationController
   end
 
   def index
-    @guests = Guest.search(params[:search])
+    @guests = Guest.admin_search(params[:search])
   end
 
   def edit
@@ -25,6 +25,10 @@ class GuestsController < ApplicationController
 
   def search
     @guests = Guest.search(params[:search])
+  end
+
+  def summary
+    @guests = Guest.all
   end
 
   private

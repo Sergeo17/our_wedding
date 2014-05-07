@@ -5,7 +5,7 @@ OurWedding::Application.routes.draw do
     end
   end
   resources :guests do
-    get 'search', on: :collection
+    get 'summary', on: :collection
   end
 
 
@@ -26,6 +26,7 @@ OurWedding::Application.routes.draw do
   get '/households/select', to: 'households#select'
 
   get '/households', to: 'households#index'
+  get '/guests/summary', to: 'guests#summary'
 
   get '/guests/:id/edit', to: 'guests#edit'
   get '/comments', to: 'comments#index'
