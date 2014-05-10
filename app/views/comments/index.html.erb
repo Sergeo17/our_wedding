@@ -1,22 +1,25 @@
 <div class="admin">
-<h1 class="TopLevelHeader">Comments</h1>
-<p><%= link_to "Go to Admin Page", admin_path %><br/><br/></p>
-<% @comments.each do |c| -%>
-    <p>
-      <%= c.comment %><br/>
-      <i>Posted: <%= c.created_at.to_date.to_s(:long) %><br/>
-      By:
-      <% c.guests.each_with_index do |g, index| -%>
-          <%- if g.plus_one_declined != true -%>
-              <%- if index > 0 -%>
-                  and <%= g.firstname %> <%= g.lastname %>
-              <%- else -%>
-                  <%= g.firstname %> <%= g.lastname %>
-              <%- end -%>
-          <% end %>
+  <h1 class="TopLevelHeader">Comments</h1>
 
+  <p><%= link_to "Go to Admin Page", admin_path %><br/><br/></p>
+  <% @comments.each do |c| -%>
+      <% if c.comment? -%>
+          <p>
+            <%= c.comment %><br/>
+            <i>Posted: <%= c.created_at.to_date.to_s(:long) %><br/>
+              By:
+              <% c.guests.each_with_index do |g, index| -%>
+                  <%- if g.plus_one_declined != true -%>
+                      <%- if index > 0 -%>
+                          and <%= g.firstname %> <%= g.lastname %>
+                      <%- else -%>
+                          <%= g.firstname %> <%= g.lastname %>
+                      <%- end -%>
+                  <% end %>
+
+              <% end %>
+            </i><br/><br/>
+          </p>
       <% end %>
-        </i><br/><br/>
-    </p>
-<% end %>
+  <% end %>
 </div>

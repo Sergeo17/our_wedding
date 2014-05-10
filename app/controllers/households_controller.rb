@@ -1,7 +1,7 @@
 class HouseholdsController < ApplicationController
 
   def index
-    @households = Household.admin_search(params[:search])
+    @households = Household.admin_search(params[:search]).page(params[:page]).per_page(10)
     #@households = Household.all
   end
 
@@ -30,6 +30,7 @@ class HouseholdsController < ApplicationController
   def update
     @household = Household.find(params[:id])
     if @household.update_attributes(household_params)
+      #RsvpMailer.rsvp_confirmation(@household).deliver
       redirect_to @household
     else
       render 'edit'

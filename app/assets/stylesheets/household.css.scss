@@ -222,6 +222,43 @@ table {
   }
 }
 
+table.summary {
+  font-family: 'Arial';
+  width: 210px;
+  margin: none;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid rgba(125,33,85,.75);
+
+  tr {
+    &:hover {
+      background: #f4f4f4;
+
+      td {
+        color: #555;
+      }
+    }
+  }
+  th, td {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    border-collapse: collapse;
+  }
+  th {
+    background: rgba(125,33,85,.75);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    &.last {
+      border-right: none;
+    }
+  }
+}
+
+
+
+
 #AdminSearchField {
   -webkit-border-radius: 6;
   -moz-border-radius: 6;
@@ -255,3 +292,4 @@ table {
   /*color: rgba(189,224,119,1);*/
   text-decoration: none;
 }
+

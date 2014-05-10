@@ -1,23 +1,36 @@
-<p>
-  Thank you for your response.<br/>
-  If anything changes between now and the big day feel free to come back here to update.<br>
-  Or you can e-mail us at <a href="mailto:ashleyandsergio@gmail.com?Subject=RSVP" target="_top">ashleyandsergio@gmail.com</a>
-</p>
-<%# if @household.guests.uniq{|x| x.wedding}.count == 1 %>
-    <%#= @household.attending %>
-<%# else %>
-    <%# end %>
+
+<% if @household.household_attending == true %>
+    <p>
+      Thank you for responding. <br/>
+      We have recorded the following:
+    </p>
+    <p>
+    <% @household.guests.each do |guest| %>
+      <% if guest.wedding == true || guest.welcome_party == true || guest.breakfast == true %>
+        <h3 class="guestnameshow"><%= guest.firstname %> <%= guest.lastname %></h3>
+        <p>
+        <%= check_box_tag 'welcome_party', '1', guest.welcome_party, :disabled => true %> Welcome Party<br/>
+        <%= check_box_tag 'wedding', '1', guest.wedding, :disabled => true %> Wedding<br/>
+        <%= check_box_tag 'breakfast', '1', guest.breakfast, :disabled => true %> Farewell Bagels<br/>
+        <%= check_box_tag 'shuttle', '1', guest.shuttle, :disabled => true %> Shuttle Ride<br/>
+        <% if guest.vegetarian == true %>
+            We will have the caterer have a vegetarian plate ready for <%= guest.firstname %>.
+        <% end %>
+        </p>
+       <% end %>
+    <% end %>
+    </p>
+    <p>
+    If anything changes between now and the big day feel free to come back here to update.<br>
+    Or you can e-mail us at <a href="mailto:ashleyandsergio@gmail.com?Subject=RSVP" target="_top">ashleyandsergio@gmail.com</a>
+    </p>
+<% else %>
+    <p>
+      We are sad to hear you can't make it.<br/>
+      Thank you for letting us know.
+    </p>
+<% end %>
 
 
-    <%#= @household.addressline1 %> <%#= @household.addressline2 %>
-    <%#= @household.city %> <%#= @household.state %>
-    <%#= @household.zipcode %>
 
-  <%# @household.guests.each do |g| %>
-    <%# if g.is_plus_one == true %>
-
-    <%# else %>
-          <%#= g.firstname %> <%#= g.lastname %>
-
-    <%# end %>
 

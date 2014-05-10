@@ -1,6 +1,7 @@
 <div class="admin">
 <h1 class="TopLevelHeader">Guests</h1>
 
+
 <p><%= link_to "Go to Admin Page", admin_path %></p>
 <p><%= link_to "Add Another Household", new_household_path %></p>
 <p><%= link_to "See Comments", comments_path %></p>
@@ -12,6 +13,7 @@
         <%= link_to "Clear Results", households_path %>
       </p>
   <% end %>
+  <%= will_paginate(@households) %>
 <table>
   <tr>
     <th>First Name</th>
@@ -61,4 +63,5 @@
       <% end %>
   <% end %>
 </table>
+  <%= will_paginate(@households) %>
 </div>

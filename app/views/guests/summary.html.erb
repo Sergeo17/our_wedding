@@ -1,9 +1,72 @@
 <div class="admin">
-<h1 class="TopLevelHeader">Summary</h1>
+  <h1 class="TopLevelHeader">Summary</h1>
+  <p><%= link_to "Go to Admin Page", admin_path %></p>
 
-<p>
-  Guests Invited (including plus ones): <%= Guest.count %><br/>
-  Households: <%= Household.count %><br/>
-</p>
+
+  <table class="summary">
+    <tr>
+      <th colspan="2">Guest Statistics</th>
+    </tr>
+    <tr>
+      <td>Invited</td>
+      <td><%= Guest.count - Guest.count_plus_one %></td>
+    </tr>
+    <tr>
+      <td>Plus Ones</td>
+      <td><%= Guest.count_plus_one %></td>
+    </tr>
+    <tr>
+      <td>Households</td>
+      <td><%= Household.count %></td>
+    </tr>
+  </table>
+  <table class="summary">
+    <tr>
+      <th colspan="2">Response Statistics</th>
+    </tr>
+    <tr>
+      <td>Responses</td>
+      <td><%= Guest.count_responses %></td>
+    </tr>
+    <tr>
+      <td>Pending</td>
+      <td><%= Guest.count - Guest.count_responses %></td>
+    </tr>
+  </table>
+  <table class="summary">
+    <tr>
+      <th colspan="2">Wedding Statistics</th>
+    </tr>
+    <tr>
+      <td>Responses</td>
+      <td><%= Guest.count_wedding %></td>
+    </tr>
+    <tr>
+      <td>Shuttle Riders</td>
+      <td><%= Guest.count_shuttle %></td>
+    </tr>
+    <tr>
+      <td>Vegetarians</td>
+      <td><%= Guest.count_vegetarian %></td>
+    </tr>
+    <tr>
+      <td>Plus Ones</td>
+      <td><%= Guest.count_plus_one_wedding %></td>
+    </tr>
+  </table>
+  <table class="summary">
+    <tr>
+      <th colspan="2">Other Events</th>
+    </tr>
+    <tr>
+      <td>Welcome Party</td>
+      <td><%= Guest.count_welcome_party %></td>
+    </tr>
+    <tr>
+      <td>Farewell Bagels</td>
+      <td><%= Guest.count_breakfast %></td>
+    </tr>
+
+  </table>
 
 </div>

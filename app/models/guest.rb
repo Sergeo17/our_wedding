@@ -21,20 +21,71 @@ class Guest < ActiveRecord::Base
     has_plus_one
   end
 
-  def plus_one_count()
-    count_plus_ones = 0
-    Guests.each do |g|
-      count_plus_ones = count_plus_ones + 1 if g.is_plus_one == true
+  def self.count_plus_one
+    count_plus_one = 0
+    Guest.all.each do |g|
+      count_plus_one = count_plus_one + 1 if g.is_plus_one == true
     end
-    count_plus_ones
+    count_plus_one
   end
 
-  def count_vegetarian()
+  def self.count_vegetarian
     count_vegetarian = 0
-    Guests.each do |g|
+    Guest.all.each do |g|
       count_vegetarian = count_vegetarian + 1 if g.vegetarian == true
     end
     count_vegetarian
   end
+
+  def self.count_shuttle
+    count_shuttle = 0
+    Guest.all.each do |g|
+      count_shuttle = count_shuttle + 1 if g.shuttle == true
+    end
+    count_shuttle
+  end
+
+  def self.count_wedding
+    count_wedding = 0
+    Guest.all.each do |g|
+      count_wedding = count_wedding + 1 if g.wedding == true
+    end
+    count_wedding
+  end
+
+  def self.count_plus_one_wedding
+    count_plus_one_wedding = 0
+    Guest.all.each do |g|
+      count_plus_one_wedding = count_plus_one_wedding + 1 if g.wedding == true && g.is_plus_one == true
+    end
+    count_plus_one_wedding
+  end
+
+  def self.count_welcome_party
+    count_welcome_party = 0
+    Guest.all.each do |g|
+      count_welcome_party = count_welcome_party + 1 if g.welcome_party == true
+    end
+    count_welcome_party
+  end
+
+  def self.count_breakfast
+    count_breakfast = 0
+    Guest.all.each do |g|
+      count_breakfast = count_breakfast + 1 if g.breakfast == true
+    end
+    count_breakfast
+  end
+
+  def self.count_responses
+    count_responses = 0
+    Guest.all.each do |g|
+      count_responses = count_responses + 1 if g.response_date?
+    end
+    count_responses
+  end
+
+
+
 
 end

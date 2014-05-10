@@ -13,32 +13,12 @@ class Household < ActiveRecord::Base
 
   def self.admin_search(search)
     if search
-      Household.joins(:guests).where('lower(lastname) like lower(?) or lower(firstname) like lower(?)', "%#{search}%", "%#{search}%" )
+      Household.joins(:guests).where('lower(lastname) like lower(?) or lower(firstname) like lower(?)', "%#{search}%", "%#{search}%" ).uniq
     else
       all
     end
   end
 
-
-  def count()
-    #x=Household.joins(:guests).where('id = ? AND is_plus_one = ? AND wedding = ?', "#{household}", false, true)
-    #x.count
-
-    count_guests = 0
-    count_attending = 0
-    count_plus_one = 0
-
-    self.guests.each do |g|
-        count_attending = count_attending + 1 if g.wedding?
-        count_guests = count_guests + 1
-        count_plus_one = count_plus_one + 1 if g.is_plus_one?
-    end
-
-    [count_guests, cou]
-
-
-
-  end
 
   def has_plus_one()
     has_plus_one = 0
@@ -46,6 +26,18 @@ class Household < ActiveRecord::Base
       has_plus_one = has_plus_one + 1 if g.is_plus_one?
     end
     has_plus_one
+  end
+
+  def household_attending()
+    household_attending = 0
+    self.guests.each do |g|
+      household_attending = household_attending + 1 if g.wedding == true
+      household_attending = household_attending + 1 if g.breakfast == true
+      household_attending = household_attending + 1 if g.welcome_party == true
+    end
+    if household_attending > 0
+      true
+    end
   end
 
   def count_vegetarian()
