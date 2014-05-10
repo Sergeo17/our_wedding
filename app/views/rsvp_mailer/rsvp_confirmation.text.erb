@@ -1,3 +1,16 @@
-<% @household.guests.each do |g| %>
-        <%= g.firstname %> <%= g.lastname %>
+Someone RSVP'd!
+
+Responses are below
+
+<% @household.guests.each do |guest| %>
+    <%= guest.firstname %> <%= guest.lastname %> <% if guest.is_plus_one? %>(plus one)<% end %>
+      Welcome Party: <%= guest.welcome_party %>
+      Wedding: <%= guest.wedding %>
+      Farewell Bagels: <%= guest.breakfast %>
+      Shuttle Ride: <%= guest.shuttle %>
+      Vegetarian: <%= guest.vegetarian %>
 <% end %>
+
+See current responses at http://murmuring-bastion-7602.herokuapp.com/households
+
+

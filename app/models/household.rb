@@ -40,6 +40,16 @@ class Household < ActiveRecord::Base
     end
   end
 
+  def household_name
+
+    determine count of unique last names.
+    count_uniq_lastnames = self.guests.lastname.uniq.count
+
+
+
+    return household_name
+  end
+
   def count_vegetarian()
     count_vegetarian = 0
     Guests.each do |g|

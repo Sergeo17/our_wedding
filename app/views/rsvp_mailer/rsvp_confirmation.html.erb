@@ -1,6 +1,26 @@
-<p>
-  <% @household.guests.each do |g| %>
-      <%= g.firstname %> <%= g.lastname %><br/>
-  <% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+</head>
+<body>
+<h1>Someone RSVP'd!</h1>
 
-</p>
+<p>Responses are below</p>
+<% @household.guests.each do |guest| %>
+    <h3><%= guest.firstname %> <%= guest.lastname %>
+      <% if guest.is_plus_one? %>(plus one)
+      <% end %></h3>
+
+    <p>
+      <%= check_box_tag 'welcome_party', '1', guest.welcome_party, :disabled => true %> Welcome Party<br/>
+      <%= check_box_tag 'wedding', '1', guest.wedding, :disabled => true %> Wedding<br/>
+      <%= check_box_tag 'breakfast', '1', guest.breakfast, :disabled => true %> Farewell Bagels<br/>
+      <%= check_box_tag 'shuttle', '1', guest.shuttle, :disabled => true %> Shuttle Ride<br/>
+      <%= check_box_tag 'vegetarian', '1', guest.vegetarian, :disabled => true %> Vegetarian<br/>
+    </p>
+<% end %>
+<p><%= link_to "See Current Responses", households_path %></p>
+</body>
+</html>
+

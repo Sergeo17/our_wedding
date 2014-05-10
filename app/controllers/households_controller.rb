@@ -30,7 +30,8 @@ class HouseholdsController < ApplicationController
   def update
     @household = Household.find(params[:id])
     if @household.update_attributes(household_params)
-      RsvpMailer.rsvp_confirmation(@household).deliver
+      #RsvpMailer.rsvp_confirmation(@household).deliver
+      RsvpMailer.delay.rsvp_confirmation(@household)
       redirect_to @household
     else
       render 'edit'
