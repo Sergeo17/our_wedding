@@ -12,6 +12,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-eb310524c5117d0d5d337e7d6c734347.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f3e868e5f31f2563bf905368eda9558d.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f3e868e5f31f2563bf905368eda9558d.css.gz" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/households_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/households_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/rsvp_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/rsvp_mailer.rb" />
     </list>
     <ignored path="our_wedding.iws" />
@@ -47,10 +48,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rsvp_mailer.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="households_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/households_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="89" selection-start="153" selection-end="153" vertical-scroll-proportion="0.054347824" vertical-offset="0" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rsvp_mailer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mailers/rsvp_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="46" selection-start="84" selection-end="84" vertical-scroll-proportion="0.018115941" vertical-offset="0" max-vertical-offset="828">
+            <state line="1" column="47" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -123,7 +133,6 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/local_env.yml" />
         <option value="$PROJECT_DIR$/app/models/household.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/households_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/rsvp_mailer/rsvp_confirmation.text.erb" />
         <option value="$PROJECT_DIR$/app/views/guests/summary.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/index.html.erb" />
@@ -132,6 +141,7 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/procfile" />
         <option value="$PROJECT_DIR$/app/mailers/rsvp_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/households_controller.rb" />
       </list>
     </option>
   </component>
@@ -251,7 +261,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mailers" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/households_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="52" selection-start="771" selection-end="771" vertical-scroll-proportion="0.61490685" vertical-offset="0" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/guests/summary.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="26" selection-start="266" selection-end="266" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1155">
@@ -879,7 +882,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/rsvp_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="84" selection-end="84" vertical-scroll-proportion="0.018115941" vertical-offset="0" max-vertical-offset="828">
+        <state line="1" column="47" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/households_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="89" selection-start="153" selection-end="153" vertical-scroll-proportion="0.054347824" vertical-offset="0" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
