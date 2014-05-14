@@ -1,5 +1,5 @@
 class RsvpMailer < ActionMailer::Base
-  default :from => "ashleyandsergio@gmail.com"v
+  default :from => "ashleyandsergio@gmail.com"
 
   def rsvp_confirmation(household)
     @household = household
