@@ -12,7 +12,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-eb310524c5117d0d5d337e7d6c734347.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f3e868e5f31f2563bf905368eda9558d.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f3e868e5f31f2563bf905368eda9558d.css.gz" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/households/search.html.erb" afterPath="$PROJECT_DIR$/app/views/households/search.html.erb" />
     </list>
     <ignored path="our_wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,10 +56,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="163" selection-end="163" vertical-scroll-proportion="0.061643835" vertical-offset="0" max-vertical-offset="730">
+            <state line="3" column="3" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/households/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/households/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="44" selection-start="888" selection-end="888" vertical-scroll-proportion="0.875" vertical-offset="246" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="273" selection-end="325" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/households/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="22" selection-start="1117" selection-end="1222" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/households/select.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/households/search.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="4" selection-start="163" selection-end="163" vertical-scroll-proportion="0.06716418" vertical-offset="0" max-vertical-offset="670">
               <folding />
             </state>
           </provider>
@@ -100,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/views/households/select.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/households/search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/guests/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/admin_show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/households/comments.html.erb" />
@@ -134,6 +187,7 @@
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/households/search.html.erb" />
       </list>
     </option>
   </component>
@@ -281,6 +335,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our_wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our_wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="households" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -720,11 +796,6 @@
         <state line="31" column="1" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.57763976" vertical-offset="0" max-vertical-offset="805" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/households/select.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140503202008_add_email_and_vegetarian_to_guest.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="74" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
@@ -761,11 +832,6 @@
         <state line="2" column="4" selection-start="83" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/households/search.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="9" selection-start="606" selection-end="606" vertical-scroll-proportion="0.23047376" vertical-offset="0" max-vertical-offset="781" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -829,11 +895,6 @@
         <state line="27" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.48913044" vertical-offset="0" max-vertical-offset="828" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/households/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="154" selection-end="982" vertical-scroll-proportion="0.37313432" vertical-offset="0" max-vertical-offset="804" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828" />
@@ -847,16 +908,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/rsvp_mailer/rsvp_confirmation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="61" selection-start="905" selection-end="905" vertical-scroll-proportion="0.41044775" vertical-offset="0" max-vertical-offset="804" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/households/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="7.75" vertical-offset="291" max-vertical-offset="1095" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/households/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="888" selection-end="888" vertical-scroll-proportion="0.875" vertical-offset="246" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/households/new.html.erb">
@@ -935,13 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="273" selection-end="325" vertical-scroll-proportion="0.1317716" vertical-offset="0" max-vertical-offset="683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/guests.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -970,6 +1014,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/households/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="22" selection-start="1117" selection-end="1222" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="273" selection-end="325" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/households/select.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/guests/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="615">
@@ -986,7 +1051,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="163" selection-end="163" vertical-scroll-proportion="0.061643835" vertical-offset="0" max-vertical-offset="730">
+        <state line="3" column="3" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/households/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/households/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="44" selection-start="888" selection-end="888" vertical-scroll-proportion="0.875" vertical-offset="246" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/households/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="163" selection-end="163" vertical-scroll-proportion="0.06716418" vertical-offset="0" max-vertical-offset="670">
           <folding />
         </state>
       </provider>
