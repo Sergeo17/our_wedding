@@ -16,12 +16,15 @@ class GuestsController < ApplicationController
 
   def update
     @guest = Guest.find(params[:id])
-    if @guest.update_attributes(guest_params)
+    if @guest.update_attributes!(guest_params)
       redirect_to @guest
     else
       render 'edit'
     end
   end
+
+
+
 
   def search
     @guests = Guest.search(params[:search])
@@ -34,7 +37,10 @@ class GuestsController < ApplicationController
   private
 
   def guest_params
-    params.require(:guest).permit(:firstname, :lastname, :household_id, :welcome_party, :wedding, :breakfast)
+    params.require(:guest).permit(:firstname, :lastname, :household_id,
+                                  :welcome_party, :wedding, :breakfast,
+                                  :shuttle, :email, :vegetarian, :is_plus_one,
+                                  :plus_one_declined, :response_date)
   end
 
 end

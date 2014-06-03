@@ -1,7 +1,7 @@
 class HouseholdsController < ApplicationController
 
   def index
-    @households = Household.admin_search(params[:search]).page(params[:page]).per_page(20)
+    @households = Household.admin_search(params[:search]).page(params[:page]).per_page(10)
     #@households = Household.all
   end
 
